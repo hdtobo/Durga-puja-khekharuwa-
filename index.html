@@ -35,6 +35,15 @@ table{width:100%;border-collapse:collapse} th,td{text-align:left;padding:10px;bo
 <p class="small">यह एक मुफ्त स्टैटिक वेबसाइट टेम्पलेट है। इस HTML फ़ाइल में बदलाव करने से ही सार्वजनिक सूची/कुल राशि अपडेट होगी। निजी व्यवस्थापक पैनल और स्वचालित पुष्टि के लिए अलग बैकएंड/पेमेंट सेवा चाहिए।</p></section>
 </main><footer>श्री दुर्गा पूजा समिति खेखरूआ • जय माता दी 🚩</footer>
 <script>
+ <div style="text-align:center; margin:20px;">
+  <a href="https://forms.gle/B225v3AE3Efz4ZFB6"
+     target="_blank"
+     style="display:inline-block; background:#b91c1c; color:white;
+     padding:14px 22px; border-radius:10px; text-decoration:none;
+     font-weight:bold;">
+    चंदा जमा करने के बाद यहाँ जानकारी भरें
+  </a>
+</div> 
 function setAmount(n,b){document.getElementById('amount').value=n;document.querySelectorAll('.amounts button').forEach(x=>x.classList.remove('active'));b.classList.add('active');updatePay()}
 function updatePay(){let n=Math.max(1,Number(document.getElementById('amount').value)||1);document.getElementById('pay').href='upi://pay?pa=8400033012@ybl&pn=Shri%20Durga%20Puja%20Samiti%20Khekharuwa&cu=INR'.replace('&cu=INR','')+'&am='+encodeURIComponent(n.toFixed(2))+'&cu=INR';}
 document.getElementById('amount').addEventListener('input',updatePay);updatePay();
